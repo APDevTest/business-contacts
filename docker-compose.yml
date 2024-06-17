@@ -1,0 +1,11 @@
+services:
+  api:
+    build: ./server
+    ports:
+      - 3000:3000
+    command: npm start  
+  client:
+    build: ./client
+    ports:
+      - 1234:1234
+    command: npm start
